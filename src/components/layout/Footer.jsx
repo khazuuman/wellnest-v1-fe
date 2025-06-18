@@ -5,26 +5,26 @@ function Footer() {
     <div className='bg-[image:var(--bg-layout2)] bg-white bg-cover bg-bottom border-none'>
       {/* service */}
       <div>
-        <div className="w-[1320px] mx-auto px-[15px] grid grid-cols-4 pb-[90px]">
+        <div className="[@media(min-width:1300px)]:w-[1320px] w-screen mx-auto px-[15px] grid grid-cols-4 pb-[90px]">
           <div className="col-span-1 px-[15px] border-r border-r-stone-300 flex flex-col items-center">
             <img className="w-[45px] h-[45px] object-contain mb-[30px]" src="\images\service_icon\service_icon1.webp" alt="" />
-            <h3 className="font-heebo text-[20px]/[24px] text-black mb-[10px]">Free Easy Return</h3>
-            <p className="font-heebo text-[16px]/[20px] text-neutral-500">Return to 7 days</p>
+            <h3 className="font-heebo text-[20px]/[24px] text-black mb-[10px] text-center">Free Easy Return</h3>
+            <p className="font-heebo text-[16px]/[20px] text-neutral-500 text-center">Return to 7 days</p>
           </div>
           <div className="col-span-1 px-[15px] border-r border-r-stone-300 flex flex-col items-center">
             <img className="w-[45px] h-[45px] object-contain mb-[30px]" src="\images\service_icon\service_icon2.webp" alt="" />
-            <h3 className="font-heebo text-[20px]/[24px] text-black mb-[10px]">Free Delivery</h3>
-            <p className="font-heebo text-[16px]/[20px] text-neutral-500">Orders over $499</p>
+            <h3 className="font-heebo text-[20px]/[24px] text-black mb-[10px] text-center">Free Delivery</h3>
+            <p className="font-heebo text-[16px]/[20px] text-neutral-500 text-center">Orders over $499</p>
           </div>
           <div className="col-span-1 px-[15px] border-r border-r-stone-300 flex flex-col items-center">
             <img className="w-[45px] h-[45px] object-contain mb-[30px]" src="\images\service_icon\service_icon3.webp" alt="" />
-            <h3 className="font-heebo text-[20px]/[24px] text-black mb-[10px]">All Day Support</h3>
-            <p className="font-heebo text-[16px]/[20px] text-neutral-500">24/7 Support care</p>
+            <h3 className="font-heebo text-[20px]/[24px] text-black mb-[10px] text-center">All Day Support</h3>
+            <p className="font-heebo text-[16px]/[20px] text-neutral-500 text-center">24/7 Support care</p>
           </div>
           <div className="col-span-1 px-[15px] flex flex-col items-center">
             <img className="w-[45px] h-[45px] object-contain mb-[30px]" src="\images\service_icon\service_icon4.webp" alt="" />
-            <h3 className="font-heebo text-[20px]/[24px] text-black mb-[10px]">Secure Checkout</h3>
-            <p className="font-heebo text-[16px]/[20px] text-neutral-500">100% protected by Paypal</p>
+            <h3 className="font-heebo text-[20px]/[24px] text-black mb-[10px] text-center">Secure Checkout</h3>
+            <p className="font-heebo text-[16px]/[20px] text-neutral-500 text-center">100% protected by Paypal</p>
           </div>
         </div>
       </div>

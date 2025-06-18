@@ -22,10 +22,10 @@ function FeedbackSlider({ slides }) {
     }, [current]);
 
     return (
-        <div className="relative w-full h-[150px] mx-auto overflow-x-hidden">
+        <div className="relative w-full h-80 [@media(min-width:750px)]:h-50 [@media(min-width:880px)]:h-[150px] mx-auto overflow-x-hidden">
             <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${current * 100}%)` }}>
                 {slides.map((s, index) => (
-                    <div key={index} className="min-w-full px-[160px] text-center flex flex-col gap-5">
+                    <div key={index} className="min-w-full px-[100px] [@media(min-width:750px)]:px-[160px] text-center flex flex-col gap-5">
                         <p className="text-[20px]/[30px] italic font-heebo text-black">{s.content}</p>
                         <p className="text-[16px]/[24px] font-heebo text-black">{s.name}</p>
                     </div>
