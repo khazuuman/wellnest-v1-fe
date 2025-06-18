@@ -9,7 +9,7 @@ import Map from '@/components/Map';
 
 export default function Home() {
 
-  let slides = [
+  const slides = [
     {
       content: "“ The scent is refreshing and sweet, but not too overwhelming, and it reminds me of strolling on the beaches of Hawaii, i.e. heaven. I also love the cute, millennial-pink color...”",
       name: "Rebeca Villalobos"

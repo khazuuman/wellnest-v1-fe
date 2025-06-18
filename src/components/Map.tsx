@@ -18,7 +18,7 @@ export default function Map() {
             maplibreLogo: true,
         });
 
-        const marker = new maplibregl.Marker()
+        new maplibregl.Marker()
             .setLngLat([105.52529258748336, 21.012536519040964])
             .addTo(map);
         return () => {
