@@ -1,15 +1,14 @@
 'use client';
 import React, { useState } from 'react'
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
+import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/outline';
 
-export default function ProductImageSlider({ slides, onSelect }) {
+export default function ProductImageSlider({ slides }) {
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const itemHeight = 200;
-    const visibleItems = 3;
+    const itemWidth = 400;
 
     const nextSlide = () => {
-        if (currentIndex >= slides.length - visibleItems) return;
+        if (currentIndex >= slides.length - 1) return;
         setCurrentIndex(currentIndex + 1);
     }
 
@@ -19,16 +18,21 @@ export default function ProductImageSlider({ slides, onSelect }) {
     }
 
     return (
-        <div className='relative px-1 w-full h-[600px] overflow-y-hidden box-border'>
-            <div className='flex flex-col transition ease-out duration-300'
-                style={{ transform: `translateY(-${currentIndex * itemHeight}px)` }}>
+        <div className='relative w-[400px] h-[450px] overflow-x-hidden box-border'>
+            <div className='flex transition ease-out duration-300 h-full'
+                style={{ transform: `translateX(-${currentIndex * itemWidth}px)` }}>
                 {slides.map((s, i) => (
-                    <img onClick={() => onSelect(s)} key={i} className='w-full h-[200px] object-cover cursor-pointer' src={s} alt={`slide-${i}`} />
+                    <img
+                        key={i}
+                        src={s}
+                        alt={`slide-${i}`}
+                        className='object-cover w-full h-full'
+                    />
                 ))}
             </div>
-            <div className='absolute w-full h-full inset-0 flex flex-col justify-between items-center pointer-events-none'>
-                <ChevronUpIcon onClick={prevSlide} className='w-5 h-5 text-black cursor-pointer pointer-events-auto' />
-                <ChevronDownIcon onClick={nextSlide} className='w-5 h-5 text-black cursor-pointer pointer-events-auto' />
+            <div className='absolute w-full h-full inset-0 flex justify-between items-center pointer-events-none'>
+                <ChevronLeftIcon onClick={prevSlide} className='w-5 h-5 text-black cursor-pointer pointer-events-auto' />
+                <ChevronRightIcon onClick={nextSlide} className='w-5 h-5 text-black cursor-pointer pointer-events-auto' />
             </div>
         </div>
     )
