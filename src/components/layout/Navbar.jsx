@@ -12,7 +12,7 @@ export default function Navbar() {
     useClickOutside(menuRef, () => setIsMenuOpen(false));
 
     return (
-        <div className='relative px-[100px] w-screen h-[80px] bg-white font-heebo flex justify-between items-center'>
+        <div className='relative px-[100px] w-screen h-[80px] bg-white font-heebo flex justify-between items-center select-none'>
             <div
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className='absolute top-1/2 -translate-y-1/2 right-10 md:hidden block cursor-pointer'>
@@ -55,11 +55,11 @@ export default function Navbar() {
                     </li>
                 </ul>
             </div>
-            <div className='z-20 w-[170px] h-[170px] sm:w-50 sm:h-50 md:w-60 md:h-60 lg:w-[250px] lg:h-[250px] rounded-full overflow-hidden select-none cursor-pointer flex
-            justify-center items-center absolute top-1 -translate-x-1/2 left-1/2'>
-                <img className='w-full h-full object-contain bg-white' src="\images\Wellnest LOGO.png" alt="" />
+            <div className='z-20 w-[170px] h-[170px] sm:w-50 sm:h-50 md:w-60 md:h-60 lg:w-[250px] lg:h-[250px] rounded-full overflow-hidden select-none flex
+            justify-center items-center absolute top-1 -translate-x-1/2 left-1/2 bg-white'>
+                <img draggable="false" className='w-full h-full object-contain bg-white' src="\images\Wellnest LOGO (1).png" alt="" />
             </div>
-            <div className='flex justify-center items-center gap-10 opacity-0 md:opacity-100 md:pointer-events-none'>
+            <div className='flex justify-center items-center gap-10 opacity-0 pointer-events-none md:opacity-100 md:pointer-events-auto'>
                 <a className='group' href=""><FaFacebookF className='w-5 h-5 text-stone-900 group-hover:text-blue-600 transition-all duration-200' /></a>
                 <a className='group' href=""><FaTiktok className='w-5 h-5 text-stone-900 group-hover:text-stone-600 transition-all duration-200' /></a>
             </div>

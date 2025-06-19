@@ -45,7 +45,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative bg-white z-10">
+    <div className="relative bg-white z-10 select-none">
       <div
         onClick={scrollToTop}
         className={`
@@ -58,8 +58,8 @@ export default function Home() {
       </div>
       {/* banner */}
       <div className="relative">
-        <img className='w-screen h-screen object-cover' src="/images/slide.webp" alt="" />
-        <img className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/images/center_slide.webp" alt="" />
+        <img draggable="false" className='w-screen h-screen object-cover' src="/images/slide.webp" alt="" />
+        <img draggable="false" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/images/center_slide.webp" alt="" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center mt-[70px]">
           <h4 className="font-beautiella text-amber-700 md:text-[60px] text-[40px] h-fit leading-0 mb-4">Handcrafted</h4>
           <h2 className="font-heebo text-stone-950 md:text-[65px] lg-[72px] text-[40px] mb-3">New Arrivals</h2>
@@ -74,13 +74,13 @@ export default function Home() {
       <div className="w-screen h-fit py-[90px]">
         <div className="w-[1320px] h-fit mx-auto flex flex-col [@media(min-width:1300px)]:flex-row">
           <div className="w-screen [@media(min-width:1300px)]:w-[50%] px-[15px] flex-col justify-center mb-10">
-            <img className="[@media(min-width:1300px)]:w-[630px] [@media(min-width:630px)]:h-[630px] 
-            w-screen [@media(min-width:900px)]:h-[1000px] h-[600px] object-[center_20%] object-cover
+            <img draggable="false" className="[@media(min-width:1300px)]:w-[630px] [@media(min-width:630px)]:h-[630px] 
+            w-screen [@media(min-width:900px)]:h-[700px] h-[600px] object-[center_20%] object-cover
             " src="/images/ads1_img/ads_img1.jpg" alt="" />
             <div className="mt-[30px] flex flex-col w-screen [@media(min-width:1300px)]:w-[100%] items-center
             [@media(min-width:1300px)]:items-start ">
               <div className="relative w-fit mb-[10px]">
-                <img className="z-10 absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[112px] h-[101px] grayscale brightness-85 contrast-100" src="\images\bg_text\bg-h1.webp" alt="" />
+                <img draggable="false" className="z-10 absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[112px] h-[101px] grayscale brightness-85 contrast-100" src="\images\bg_text\bg-h1.webp" alt="" />
                 <span className="z-20 relative font-beautiella text-[60px] text-amber-700">About us</span>
               </div>
               <h2 className="font-heebo [@media(min-width:1300px)]:text-[40px]/10 text-[30px]/8 mb-[20px] text-stone-950">The Olars Candle Story</h2>
@@ -94,11 +94,11 @@ export default function Home() {
           </div>
           <div className="w-[50%]">
             <div className="w-screen px-5 [@media(min-width:1300px)]:w-[521px] [@media(min-width:1300px)]:ml-auto [@media(min-width:1300px)]:px-0">
-              <img className="w-full h-[521px] object-center object-cover" src="\images\ads1_img\ads_img2.jpg" alt="" />
+              <img draggable="false" className="w-full h-[521px] object-center object-cover" src="\images\ads1_img\ads_img2.jpg" alt="" />
               <h2 className="text-[30px]/[36px] font-heebo my-[30px] text-black text-center [@media(min-width:1300px)]:text-start">Handcrafted by <br /> a team of artisans.</h2>
             </div>
             <div className="w-screen px-5 [@media(min-width:1300px)]:w-[521px] [@media(min-width:1300px)]:ml-auto [@media(min-width:1300px)]:px-0">
-              <img className="w-full h-[521px] object-center object-cover" src="\images\ads1_img\ads_img3.jpg" alt="" />
+              <img draggable="false" className="w-full h-[521px] object-center object-cover" src="\images\ads1_img\ads_img3.jpg" alt="" />
               <h2 className="text-[30px]/[36px] font-heebo my-[30px] text-black text-center [@media(min-width:1300px)]:text-start">We use 100% soy <br /> wax derived.</h2>
             </div>
           </div>
@@ -200,28 +200,28 @@ export default function Home() {
           <div className="px-[15px]">
             <h2 className="font-heebo text-[40px]/[48px] mt-[10px] mb-[50px] text-black text-center">Holistic Wellness & <br /> Thoughtfully Curated Gifts</h2>
             <div className="flex h-fit mb-[35px]">
-              <img className="w-[65px] h-max mr-[21px] object-contain" src="\images\ads2_img\ads2_img2.jpg" alt="" />
+              <img draggable="false" className="w-[65px] h-max mr-[21px] object-contain" src="\images\ads2_img\ads2_img2(2).jpg" alt="" />
               <div className="flex flex-col justify-center">
                 <div className="text-[20px]/[40px] font-heebo text-black">Naturally Sourced</div>
                 <p className="text-neutral-500 text-[16px]/[26px] font-heebo">Each product is made from plant-based, organic ingredients.</p>
               </div>
             </div>
             <div className="flex h-fit mb-[35px]">
-              <img className="w-[65px] h-max mr-[21px] object-contain" src="\images\ads2_img\ads2_img3.jpg" alt="" />
+              <img draggable="false" className="w-[65px] h-max mr-[21px] object-contain" src="\images\ads2_img\ads2_img3.jpg" alt="" />
               <div className="flex flex-col justify-center">
                 <div className="text-[20px]/[40px] font-heebo text-black">Eco-Conscious Packaging</div>
                 <p className="text-neutral-500 text-[16px]/[26px] font-heebo">We use recyclable, biodegradable materials for a greener planet.</p>
               </div>
             </div>
             <div className="flex h-fit mb-[35px]">
-              <img className="w-[65px] h-max mr-[21px] object-contain" src="\images\ads2_img\ads2_img4.jpg" alt="" />
+              <img draggable="false" className="w-[65px] h-max mr-[21px] object-contain" src="\images\ads2_img\ads2_img4.jpg" alt="" />
               <div className="flex flex-col justify-center">
                 <div className="text-[20px]/[40px] font-heebo text-black">Boosts Immunity & Energy</div>
                 <p className="text-neutral-500 text-[16px]/[26px] font-heebo">Packed with antioxidants, vitamins, and herbal blends for daily vitality.</p>
               </div>
             </div>
             <div className="flex h-fit mb-[35px]">
-              <img className="w-[65px] h-max mr-[21px] object-contain" src="\images\ads2_img\ads2_img1.jpg" alt="" />
+              <img draggable="false" className="w-[65px] h-max mr-[21px] object-contain" src="\images\ads2_img\ads2_img1.jpg" alt="" />
               <div className="flex flex-col justify-center">
                 <div className="text-[20px]/[40px] font-heebo text-black">Perfect for Gifting</div>
                 <p className="text-neutral-500 text-[16px]/[26px] font-heebo">Elegantly packaged — ideal for birthdays, celebrations, or self-care moments.</p>
@@ -229,7 +229,7 @@ export default function Home() {
             </div>
           </div>
           <div className="px-[15px]">
-            <img className="object-contain w-full h-full" src="\images\ads2_img\ads2_img5.jpg" alt="" />
+            <img draggable="false" className="object-contain w-full h-full" src="\images\ads2_img\ads2_img5.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -252,13 +252,13 @@ export default function Home() {
       <div className="py-[90px]">
         <div className="flex flex-col justify-center items-center [@media(min-width:1300px)]:items-start [@media(min-width:1300px)]:w-[1320px] [@media(min-width:1300px)]:flex-row mx-auto">
           <div className="px-[15px] [@media(min-width:1300px)]:w-[50%]">
-            <img className="w-[100%] h-[80%] object-contain" src="\images\ads3_img\ads3_img1.jpg" alt="" />
+            <img draggable="false" className="w-[100%] h-[80%] object-contain" src="\images\ads3_img\ads3_img1.jpg" alt="" />
           </div>
           <div className="relative px-[15px] [@media(min-width:1300px)]:w-[50%] flex flex-col justify-start">
             <div className="pt-[50px] pl-[65px] pb-[15px] w-full h-full flex flex-col justify-center items-center [@media(min-width:1300px)]:block">
               <div className="w-fit">
                 <div className="relative mt-[10px] font-beautiella text-[60px] whitespace-nowrap leading-none text-amber-700">
-                  <img className="absolute z-10 left-1/2 top-0.5 -translate-x-1/2 -translate-y-1/2" src="\images\bg_text\bg-h4.webp" alt="Customer Said" />
+                  <img draggable="false" className="absolute z-10 left-1/2 top-0.5 -translate-x-1/2 -translate-y-1/2" src="\images\bg_text\bg-h4.webp" alt="Customer Said" />
                   <span className="relative z-20">Just for you</span>
                 </div>
               </div>
@@ -273,13 +273,13 @@ export default function Home() {
                 <ArrowLongRightIcon className="w-[20px] h-[22px] group-hover:animate-wiggle" />
               </a>
             </div>
-            <img className="[@media(min-width:1300px)]:w-[55%] pt-5 [@media(min-width:1300px)]:absolute 
+            <img draggable="false" className="[@media(min-width:1300px)]:w-[55%] pt-5 [@media(min-width:1300px)]:absolute 
               [@media(min-width:1300px)]:top-100 [@media(min-width:1300px)]:right-0" src="\images\ads3_img\ads3_img2.jpg" alt="" />
           </div>
         </div>
       </div>
       {/* contact */}
-      <div id='contact' className='[@media(min-width:1300px)]:w-[1320px] w-screen mx-auto pb-30 font-heebo'>
+      <div id='contact' className='[@media(min-width:1300px)]:w-[1320px] w-screen mx-auto pb-30 font-heebo select-text'>
         <div className='flex flex-col [@media(min-width:1300px)]:flex-row gap-5 items-center justify-center'>
           <div className='[@media(min-width:1300px)]:w-[40%] w-[100%] px-5 [@media(min-width:1300px)]:px-0'>
             <h2 className='text-[30px] mb-[15px] text-black'>Visit one of our agency locations or contact us today.</h2>
