@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "1.16.8",
@@ -14,6 +15,7 @@
     "@openmapvn/openmapvn-gl": "^1.0.1",
     "material-icons": "^1.13.14",
     "next": "15.3.3",
+    "next-sitemap": "^4.2.3",
     "nouislider": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

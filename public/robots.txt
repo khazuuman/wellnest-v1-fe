@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://wellnest-v1.vercel.app
+
+# Sitemaps
+Sitemap: https://wellnest-v1.vercel.app/sitemap.xml

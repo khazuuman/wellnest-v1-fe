@@ -9,6 +9,7 @@ import { BsTelephone } from "react-icons/bs";
 import Map from '@/components/Map';
 import useClickOutside from '@/hooks/useClickOutside.js';
 import ProductImageSlider from '../components/Slider/ProductImageSlider.jsx'
+import { useInView } from '@/hooks/useInView';
 
 export default function Home() {
 
@@ -31,6 +32,8 @@ export default function Home() {
     '/images/product_demo_img/product_1.webp',
     '/images/product_demo_img/product_2.webp'
   ]
+
+  const { ref, isVisible } = useInView();
 
   const [showButton, setShowButton] = useState(false);
   useEffect(() => {
@@ -73,9 +76,9 @@ export default function Home() {
         <img draggable="false" className='w-screen h-screen object-cover' src="/images/slide.webp" alt="" />
         <img draggable="false" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/images/center_slide.webp" alt="" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center mt-[70px]">
-          <h4 className="font-beautiella text-amber-700 md:text-[60px] text-[40px] h-fit leading-0 mb-4">Handcrafted</h4>
-          <h2 className="font-heebo text-stone-950 md:text-[65px] lg-[72px] text-[40px] mb-3">New Arrivals</h2>
-          <p className="font-heebo md:text-[16px]  text-[13px] text-neutral-500 mb-8">Ignite the energy, share the vitality!</p>
+          <h4 className="fade-in-up fade-in-up-delay-1 font-beautiella text-amber-700 md:text-[60px] text-[40px] h-fit leading-0 mb-4">Handcrafted</h4>
+          <h2 className="fade-in-up fade-in-up-delay-2 font-heebo text-stone-950 md:text-[65px] lg-[72px] text-[40px] mb-3">New Arrivals</h2>
+          <p className="fade-in-up fade-in-up-delay-3 font-heebo md:text-[16px]  text-[13px] text-neutral-500 mb-8">Ignite the energy, share the vitality!</p>
           <a className="md:px-[30px] md:py-[16px] px-[20px] py-[12px] bg-amber-700 flex items-center group hover:bg-stone-950 transition-colors duration-200" href="">
             <span className="font-heebo md:text-[16px] text-[13px] text-white mr-[10px]">Discovery Now</span>
             <ArrowLongRightIcon className="w-[20px] h-[22px] group-hover:animate-wiggle" />
@@ -83,7 +86,7 @@ export default function Home() {
         </div>
       </div>
       {/* introduction part 1*/}
-      <div className="w-screen h-fit py-[90px]">
+      <div ref={ref} className={`transition-all duration-1000 ease-out delay-300 w-screen h-fit py-[90px] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="w-[1320px] h-fit mx-auto flex flex-col [@media(min-width:1300px)]:flex-row">
           <div className="w-screen [@media(min-width:1300px)]:w-[50%] px-[15px] flex-col justify-center mb-10">
             <img draggable="false" className="[@media(min-width:1300px)]:w-[630px] [@media(min-width:630px)]:h-[630px] 
@@ -117,7 +120,7 @@ export default function Home() {
         </div>
       </div>
       {/* product list title */}
-      <div className="py-[90px] px-[15px] bg-stone-100">
+      <div className={`py-[90px] px-[15px] bg-stone-100 transition-all duration-1000 ease-out delay-300`}>
         <div className="h-fit">
           <div className="relative w-screen flex justify-center">
             <img className="z-10 absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-fit h-fit grayscale brightness-100 contrast-100" src="\images\bg_text\bg-h2.webp" alt="" />

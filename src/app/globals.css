@@ -24,13 +24,16 @@
 
 @theme {
   --animate-wiggle: wiggle 0.2s ease-in-out;
+
   @keyframes wiggle {
     0% {
       opacity: 1;
     }
+
     50% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
@@ -72,6 +75,19 @@
   font-style: normal;
 }
 
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -82,3 +98,15 @@ body {
   font-family: var(--font-beautiella);
 }
 
+.fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.fade-in-up-delay-1 {
+  animation-delay: 0.1s;
+}
+.fade-in-up-delay-2 {
+  animation-delay: 0.3s;
+}
+.fade-in-up-delay-3 {
+  animation-delay: 0.5s;
+}
