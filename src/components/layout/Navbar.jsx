@@ -25,7 +25,12 @@ export default function Navbar() {
                 <div className='relative w-full h-full flex 
             justify-center items-center flex-col'>
                     <RiMenuFold2Line onClick={() => setIsMenuOpen(false)} className='w-5 h-5 absolute top-0 left-0 text-black cursor-pointer' />
-                    <a className="flex justify-center gap-1 group mb-5 w-full items-center" href="">
+                    <a
+                        onClick={() => {
+                            const target = document.getElementById('contact');
+                            target?.scrollIntoView({ behavior: "smooth" })
+                        }}
+                        className="flex justify-center gap-1 group mb-5 w-full items-center cursor-pointer">
                         <span className="flex justify-center items-center text-black text-[16px] relative group-hover:text-amber-600">
                             Contact
                             <span className="absolute left-0 -bottom-1 h-[1px] w-full scale-x-0 origin-right group-hover:origin-left bg-amber-600 transition-transform duration-300 group-hover:scale-x-100" />
@@ -42,11 +47,11 @@ export default function Navbar() {
                 <ul className='flex items-center h-full md:opacity-100 md:pointer-events-auto opacity-0 pointer-events-none'>
                     <li className="h-full flex items-center group relative cursor-pointer">
                         <a
-                        onClick={() => {
-                            const target = document.getElementById('contact');
-                            target?.scrollIntoView({ behavior: "smooth"})
-                        }} 
-                        className="pl-[30px] flex justify-center gap-1" href="#">
+                            onClick={() => {
+                                const target = document.getElementById('contact');
+                                target?.scrollIntoView({ behavior: "smooth" })
+                            }}
+                            className="pl-[30px] flex justify-center gap-1" href="#">
                             <span className="flex justify-center items-center text-black text-[16px] relative group-hover:text-amber-600">
                                 Contact
                                 <span className="absolute left-0 -bottom-1 h-[1px] w-full scale-x-0 origin-right group-hover:origin-left bg-amber-600 transition-transform duration-300 group-hover:scale-x-100" />
