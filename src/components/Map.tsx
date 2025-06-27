@@ -6,7 +6,6 @@ import "@openmapvn/openmapvn-gl/dist/maplibre-gl.css";
 export default function Map() {
 
     const mapContainer = useRef<HTMLDivElement>(null);
-    console.log('API KEY:', process.env.NEXT_PUBLIC_MAPS_API_KEY);
     useEffect(() => {
         if (!mapContainer.current) return;
 

@@ -26,13 +26,13 @@ export default function ProductImageSlider({ slides }) {
                         key={i}
                         src={s}
                         alt={`slide-${i}`}
-                        className='object-cover w-full h-full'
+                        className='object-contain w-full h-full'
                     />
                 ))}
             </div>
-            <div className='absolute w-full h-full inset-0 flex justify-between items-center pointer-events-none'>
-                <ChevronLeftIcon onClick={prevSlide} className='w-5 h-5 text-black cursor-pointer pointer-events-auto' />
-                <ChevronRightIcon onClick={nextSlide} className='w-5 h-5 text-black cursor-pointer pointer-events-auto' />
+            <div className='absolute w-full h-full inset-0 flex justify-between items-center'>
+                <ChevronLeftIcon onClick={prevSlide} className='w-5 h-5 text-black cursor-pointer' />
+                <ChevronRightIcon onClick={nextSlide} className='w-5 h-5 text-black cursor-pointer' />
             </div>
         </div>
     )
