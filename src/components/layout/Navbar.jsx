@@ -37,8 +37,8 @@ export default function Navbar() {
                         </span>
                     </a>
                     <div className='flex justify-center items-center gap-10'>
-                        <a className='group' href=""><FaFacebookF className='w-5 h-5 text-stone-900 group-hover:text-blue-600 transition-all duration-200' /></a>
-                        <a className='group' href=""><FaTiktok className='w-5 h-5 text-stone-900 group-hover:text-stone-600 transition-all duration-200' /></a>
+                        <a className='group' href="https://www.facebook.com/profile.php?id=61577228763442&mibextid=wwXIfr" target='_blank'><FaFacebookF className='w-5 h-5 text-stone-900 group-hover:text-blue-600 transition-all duration-200' /></a>
+                        <a className='group' href="https://www.tiktok.com/@wellnest_giftbox?lang=vi-VN" target='_blank'><FaTiktok className='w-5 h-5 text-stone-900 group-hover:text-stone-600 transition-all duration-200' /></a>
                     </div>
                 </div>
             </div>
@@ -65,8 +65,8 @@ export default function Navbar() {
                 <img draggable="false" className='w-full h-full object-contain bg-white' src="\images\Wellnest LOGO (1).png" alt="" />
             </div>
             <div className='flex justify-center items-center gap-10 opacity-0 pointer-events-none md:opacity-100 md:pointer-events-auto'>
-                <a className='group' href=""><FaFacebookF className='w-5 h-5 text-stone-900 group-hover:text-blue-600 transition-all duration-200' /></a>
-                <a className='group' href=""><FaTiktok className='w-5 h-5 text-stone-900 group-hover:text-stone-600 transition-all duration-200' /></a>
+                <a className='group' href="https://www.facebook.com/profile.php?id=61577228763442&mibextid=wwXIfr" target='_blank'><FaFacebookF className='w-5 h-5 text-stone-900 group-hover:text-blue-600 transition-all duration-200' /></a>
+                <a className='group' href="https://www.tiktok.com/@wellnest_giftbox?lang=vi-VN" target='_blank'><FaTiktok className='w-5 h-5 text-stone-900 group-hover:text-stone-600 transition-all duration-200' /></a>
             </div>
         </div>
     )

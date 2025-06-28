@@ -1,28 +1,31 @@
 import { initialMessage } from '@/lib/data'
+import OpenAI from 'openai'
+
+interface Message {
+  role: string,
+  content: string
+}
+
+const client = new OpenAI({
+  baseURL: "https://models.github.ai/inference",
+  apiKey: process.env.OPENAI_API_KEY
+});
 
 export async function POST(req: Request) {
   const { messages } = await req.json();
 
-  const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      model: "google/gemini-2.0-flash-lite-001",
-      messages: [initialMessage, ...messages.map((m: any) => ({
+  try {
+    const response = await client.chat.completions.create({
+      model: "openai/gpt-4o",
+      messages: [initialMessage, ...messages.map((m: Message) => ({
         role: m.role,
         content: m.content
-      }))]
-    })
-  });
+      }))],
+    });
 
-  if (!response.ok) {
-    const error = await response.text();
-    return new Response(JSON.stringify({ error }), { status: 500 });
+    return Response.json(response);
+  } catch (error) {
+    return new Response(JSON.stringify({ error: String(error) }), { status: 500 });
   }
-
-  const data = await response.json();
-  return Response.json(data);
 }
+

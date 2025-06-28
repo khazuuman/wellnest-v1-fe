@@ -6,7 +6,7 @@ interface UseInViewOption {
 }
 
 export const useInView = ({ threshold = 0.1, delay = 0, }: UseInViewOption = {}) => {
-    const ref = useRef<any | null>(null);
+    const ref = useRef<HTMLDivElement | null>(null);
     const [isVisible, setIsVisible] = useState(false);
     const timeoutId = useRef<NodeJS.Timeout | null>(null);
 

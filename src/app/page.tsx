@@ -3,12 +3,13 @@ import FeedbackSlider from '../components/Slider/FeedbackSlider.jsx'
 import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import { useEffect, useState } from 'react';
 import { SlArrowUp, SlEnvolopeLetter } from "react-icons/sl";
-import { IoHomeOutline, IoEarthOutline } from "react-icons/io5";
+import { IoHomeOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import Map from '@/components/Map';
 import { useInView } from '@/hooks/useInView';
 import Chatbot from '../components/Chatbot'
 import ProductCard from '@/components/ProductCard';
+// import Image from 'next/image';
 
 export default function Home() {
 
@@ -189,9 +190,11 @@ export default function Home() {
       <div className={`ease-out delay-300 w-screen h-fit py-[90px]`}>
         <div className="w-[1320px] h-fit mx-auto flex flex-col [@media(min-width:1300px)]:flex-row">
           <div className={`w-screen [@media(min-width:1300px)]:w-[50%] px-[15px] flex-col justify-center mb-10`}>
-            <img ref={refIntro1ImgLeft} draggable="false" className={`[@media(min-width:1300px)]:w-[630px] [@media(min-width:630px)]:h-[630px] 
+            <div ref={refIntro1ImgLeft}>
+              <img draggable="false" className={`[@media(min-width:1300px)]:w-[630px] [@media(min-width:630px)]:h-[630px] 
             w-screen [@media(min-width:900px)]:h-[700px] h-[600px] object-[center_20%] object-cover transition-all duration-1000 
             ${isIntro1ImgLeftVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} src="/images/ads1_img/ads_img1.jpg" alt="" />
+            </div>
             <div ref={refIntro1DivLeft} className={`mt-[30px] flex flex-col w-screen [@media(min-width:1300px)]:w-[100%] items-center
             [@media(min-width:1300px)]:items-start ${isIntro1DivLeftVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} transition-all duration-1000 `}>
               <div className="relative w-fit mb-[10px]">
@@ -356,28 +359,28 @@ export default function Home() {
             isSoldOut={false}
             isNew={true} />
           <ProductCard slides={EOGreenTea}
-            proName='Eucalyptus Mint 3-Wick Candle'
-            desc='The best is yet to come! Give your walls a voice with a framed poster. This aesthethic, optimistic poster will look great in
-                  your desk or in an open-space office. Painted wooden frame with passe-partout for more depth'
-            mainPrice='$13.00'
+            proName='Citta Green Tea Scented Diffuser Oil'
+            desc='Brand: CITTA. Scents: Empty Spirit, Gardenia, Zen Tea. Product Size: 5 x 5 x 7.5 cm. Packaging Size: 5.5 x 5.5 x 15.5 cm. Volume: 50 ml. Scent Duration: Up to 45 days (depending on weather and number of diffuser sticks). Total Weight (with packaging): 270g
+                .Note: Manual measurements may have slight discrepancies.'
+            mainPrice='48,000 VND'
             addPrice={null}
             isSale={false}
             isSoldOut={false}
             isNew={true} />
           <ProductCard slides={EOSea}
-            proName='Eucalyptus Mint 3-Wick Candle'
-            desc='The best is yet to come! Give your walls a voice with a framed poster. This aesthethic, optimistic poster will look great in
-                  your desk or in an open-space office. Painted wooden frame with passe-partout for more depth'
-            mainPrice='$13.00'
+            proName='Citta Hymns Of Sea Breeze Scented Diffuser Oil'
+            desc='Brand: CITTA. Scents: Empty Spirit, Gardenia, Zen Tea. Product Size: 5 x 5 x 7.5 cm. Packaging Size: 5.5 x 5.5 x 15.5 cm. Volume: 50 ml. Scent Duration: Up to 45 days (depending on weather and number of diffuser sticks). Total Weight (with packaging): 270g
+                .Note: Manual measurements may have slight discrepancies.'
+            mainPrice='48,000 VND'
             addPrice={null}
             isSale={false}
             isSoldOut={false}
             isNew={true} />
           <ProductCard slides={EOLavender}
-            proName='Eucalyptus Mint 3-Wick Candle'
-            desc='The best is yet to come! Give your walls a voice with a framed poster. This aesthethic, optimistic poster will look great in
-                  your desk or in an open-space office. Painted wooden frame with passe-partout for more depth'
-            mainPrice='$13.00'
+            proName='Citta Lavender Scented Diffuser Oil'
+            desc='Brand: CITTA. Scents: Empty Spirit, Gardenia, Zen Tea. Product Size: 5 x 5 x 7.5 cm. Packaging Size: 5.5 x 5.5 x 15.5 cm. Volume: 50 ml. Scent Duration: Up to 45 days (depending on weather and number of diffuser sticks). Total Weight (with packaging): 270g
+                .Note: Manual measurements may have slight discrepancies.'
+            mainPrice='48,000 VND'
             addPrice={null}
             isSale={false}
             isSoldOut={false}
@@ -528,13 +531,13 @@ Quality controlled, packed, and distributed by Langfarm.'
         <div className='flex flex-col [@media(min-width:1300px)]:flex-row gap-5 items-center justify-center'>
           <div className='[@media(min-width:1300px)]:w-[40%] w-[100%] px-5 [@media(min-width:1300px)]:px-0'>
             <h2 className='text-[30px] mb-[15px] text-black'>Visit one of our agency locations or contact us today.</h2>
-            <div className='text-[14px] mb-[10px] text-black'>Apollo themes features beautifully sectioned layout that allows you to showcase featured items for each category on the homepage. It comes with many different homepage layouts, so you can choose any suitable homepage for you store.</div>
+            <div className='text-[14px] mb-[10px] text-black'>Our Wellnest headquarters is designed with a modern, nature-inspired style, using eco-friendly materials. We create a welcoming space for creativity and wellness, where every visitor can experience the spirit of Wellnest in each gift box.</div>
             <h5 className='text-[14px] mb-[2.5px] text-black'>Head Office</h5>
             <ul>
-              <li className='py-[2px] text-[14px]/[33px] text-black flex gap-2 items-center '><IoHomeOutline className='w-5 h-5' /> <span>123 Sky Tower, West 21th Street, Suite 721, NY</span></li>
-              <li className='py-[2px] text-[14px]/[33px] text-black flex gap-2 items-center'><BsTelephone className='w-5 h-5' /> <span>+844 123 456 789</span></li>
-              <li className='py-[2px] text-[14px]/[33px] text-black flex gap-2 items-center'><SlEnvolopeLetter className='w-5 h-5' /> <span>demo@demo.com</span></li>
-              <li className='py-[2px] text-[14px]/[33px] text-black flex gap-2 items-center'><IoEarthOutline className='w-5 h-5' /> <span>www.example.com</span></li>
+              <li className='py-[2px] text-[14px]/[33px] text-black flex gap-2 items-center '><IoHomeOutline className='w-5 h-5' /> <span>Trường Đại học FPT, xã Thạch Hòa, huyện Thạch Thất, thành phố Hà Nội</span></li>
+              <li className='py-[2px] text-[14px]/[33px] text-black flex gap-2 items-center'><BsTelephone className='w-5 h-5' /> <span>0335 982 700</span></li>
+              <li className='py-[2px] text-[14px]/[33px] text-black flex gap-2 items-center'><SlEnvolopeLetter className='w-5 h-5' /> <span>khaindhe171504@fpt.edu.vn</span></li>
+              {/* <li className='py-[2px] text-[14px]/[33px] text-black flex gap-2 items-center'><IoEarthOutline className='w-5 h-5' /> <span>www.example.com</span></li> */}
             </ul>
           </div>
           <div className='[@media(min-width:1300px)]:w-[60%] w-screen'>

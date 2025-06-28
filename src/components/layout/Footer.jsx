@@ -9,12 +9,12 @@ function Footer() {
           <div className="col-span-1 px-[15px] border-r border-r-stone-300 flex flex-col items-center">
             <img className="w-[45px] h-[45px] object-contain mb-[30px]" src="\images\service_icon\service_icon1.webp" alt="" />
             <h3 className="font-heebo text-[20px]/[24px] text-black mb-[10px] text-center">Free Easy Return</h3>
-            <p className="font-heebo text-[16px]/[20px] text-neutral-500 text-center">Return to 7 days</p>
+            <p className="font-heebo text-[16px]/[20px] text-neutral-500 text-center">Refund if faulty</p>
           </div>
           <div className="col-span-1 px-[15px] border-r border-r-stone-300 flex flex-col items-center">
             <img className="w-[45px] h-[45px] object-contain mb-[30px]" src="\images\service_icon\service_icon2.webp" alt="" />
             <h3 className="font-heebo text-[20px]/[24px] text-black mb-[10px] text-center">Free Delivery</h3>
-            <p className="font-heebo text-[16px]/[20px] text-neutral-500 text-center">Orders over $499</p>
+            <p className="font-heebo text-[16px]/[20px] text-neutral-500 text-center">Orders over 2 products</p>
           </div>
           <div className="col-span-1 px-[15px] border-r border-r-stone-300 flex flex-col items-center">
             <img className="w-[45px] h-[45px] object-contain mb-[30px]" src="\images\service_icon\service_icon3.webp" alt="" />
@@ -24,17 +24,17 @@ function Footer() {
           <div className="col-span-1 px-[15px] flex flex-col items-center">
             <img className="w-[45px] h-[45px] object-contain mb-[30px]" src="\images\service_icon\service_icon4.webp" alt="" />
             <h3 className="font-heebo text-[20px]/[24px] text-black mb-[10px] text-center">Secure Checkout</h3>
-            <p className="font-heebo text-[16px]/[20px] text-neutral-500 text-center">100% protected by Paypal</p>
+            <p className="font-heebo text-[16px]/[20px] text-neutral-500 text-center">Cash on Delivery</p>
           </div>
         </div>
       </div>
       <div className='flex flex-col justify-center items-center w-screen h-fit'>
         <div className='w-[60%] border-t border-stone-400 justify-center'>
           <div className='pt-[40px] pb-[80px] flex justify-center'>
-            <span className='font-heebo text-[14px] text-neutral-500'>Copyright © 2022 Olars. All Rights Reserved |
-              <span className='text-black text-[16px] font-bold'> (+01) 123 567 99</span>
+            <span className='font-heebo text-[14px] text-neutral-500'>Copyright © 2022 Wellnest. All Rights Reserved |
+              <span className='text-black text-[16px] font-bold'> (+88) 335 982 700</span>
               <span> | </span>
-              <a className='text-black' href="">demo@demo.com</a>
+              <a className='text-black' href="">khaindhe171504@fpt.edu.vn</a>
             </span>
           </div>
         </div>
