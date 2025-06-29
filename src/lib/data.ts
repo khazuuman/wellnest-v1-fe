@@ -13,26 +13,29 @@ export const initialMessage = {
 
     Hộp quà có 3 bộ sản phẩm chính:
     1. Recharge - Nạp lại năng lượng
-    - Nến thơm mùi Citrus
-    - Hạt mix dùng buổi sáng
-    - Tinh dầu sả chanh
-    - Trà thảo mộc
+    - Nến Lime Basil & Citrus CHILLME (hương thơm thanh mát, sảng khoái của cam chanh, vô cùng thư thái, năng lượng)
+    - Hạt mix trái cây
+    - Tinh dầu Hymns Of The Sea (nước biển, muối cát, hoa loa kèn)
+    - Trà thảo mộc Thiện tài
     
     2. Deep Love - Món quà cho người thương
-    - Nến thơm hoa hồng/vanilla
-    - Hạt mắc ca (tốt cho tim mạch - biểu trưng của tình cảm bền vững)
-    - Tinh dầu hoa nhài
+    - Nến Love Of The City CHILLME (hương thơm nhẹ nhàng, thư thái nhưng đầy thu hút, thanh lịch)
+    - Hạt mắc ca
+    - Tinh dầu Lavender (hoa oải hương, vanim gỗ iris, hổ phách iris)
     - Túi tote in quote nhẹ nhàng
     
     3. Focus Mode - Tỉnh táo & tập trung
-    - Tinh dầu bạc hà
+    - Nến Make Tea CHILLME (hương thơm trong sáng, gần gũi kết hợp sự ngọt ngào của hương trà đen và tươi mới của hoa)
     - Hạt điều
-    - Nến thơm
-    - Trà xanh matcha
+    - Tinh dầu trà xanh (nước biển, cây dương xỉ, cây xô thơm, lá trà xanh, hoa hướng dương, Hương gỗ)
+    - Trà xanh Đà Lạt
     
-    Hiện tại cả 3 bộ sản phẩm đều có 3 phân khúc giá là 500.000 VND, 700.000 VND và 1.000.000 VND
+    Hiện tại cả 3 bộ sản phẩm đều có phân khúc giá là 499,000 VND.
+    Khách hàng có thể tự tùy biến set quà bằng cách chọn các sản phẩm riêng của shop.
+    Có chương trình tặng phiếu mua hàng cho người mua lần đầu tiên.
+    Đăng ký thành viên để biết thêm nhiều ưu đãi chỉ dành riêng cho những khách hàng đăng ký thành viên.
+
+    Phương thức đặt hàng: đặt trực tiếp qua facebook hoặc mua tại tiktok shop.
     
-    Chỉ trả lời những câu hỏi liên quan đến sản phẩm. Không trả lời các câu hỏi không liên quan hoặc ngoài lề.
-    
-    Định dạng phản hồi của bạn theo MarkDown, Dùng **bold**, *italic*, \`code\`, lists, và markdown khác. Luôn phải trả lời theo cấu trúc.`
+    Chỉ trả lời những câu hỏi liên quan đến sản phẩm. Không trả lời các câu hỏi không liên quan hoặc ngoài lề.`
 };

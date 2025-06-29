@@ -124,6 +124,10 @@ export default function Home() {
     '/images/product_demo_img/toteBag.webp',
   ]
 
+  const thienTaiTea = [
+    '/images/product_demo_img/thienTaiTea.webp',
+  ]
+
   const { ref: refIntro1ImgLeft, isVisible: isIntro1ImgLeftVisible } = useInView({ threshold: 0.2 });
   const { ref: refIntro1RightRow1, isVisible: isIntro1RightVisibleRow1 } = useInView({ threshold: 0.2 })
   const { ref: refIntro1DivLeft, isVisible: isIntro1DivLeftVisible } = useInView({ threshold: 0.2 });
@@ -434,8 +438,17 @@ Quality controlled, packed, and distributed by Langfarm.'
             isNew={true} />
           <ProductCard slides={scentedBag}
             proName='Scented Bag'
-            desc=' scented sachet is a small fabric or cotton bag filled with minerals, dried flowers, and natural essential oils. It helps eliminate odors, absorb moisture, repel insects, uplift your mood, and serves as a cute decorative item for your home or wardrobe. Safe and natural for everyday use.'
+            desc='Scented sachet is a small fabric or cotton bag filled with minerals, dried flowers, and natural essential oils. It helps eliminate odors, absorb moisture, repel insects, uplift your mood, and serves as a cute decorative item for your home or wardrobe. Safe and natural for everyday use.'
             mainPrice='20,000 VND'
+            addPrice={null}
+            isSale={false}
+            isSoldOut={false}
+            isNew={true} />
+            <ProductCard slides={thienTaiTea}
+            proName='Scented Bag'
+            desc='Shan Tuyet tea is a wild tea variety that grows and develops naturally in the forest. Therefore, this resource is also harvested seasonally, allowing the trees time to recover and continue growing (spring and autumn harvests). Thanks to this balanced approach, there are ancient Shan Tuyet tea trees that are up to 600 years old, 
+            yet remain healthy, vigorous, and continue to provide harvests for local people without becoming stunted or depleted.'
+            mainPrice='114,000 VND'
             addPrice={null}
             isSale={false}
             isSoldOut={false}
