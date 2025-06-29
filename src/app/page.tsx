@@ -445,7 +445,7 @@ Quality controlled, packed, and distributed by Langfarm.'
             isSoldOut={false}
             isNew={true} />
             <ProductCard slides={thienTaiTea}
-            proName='Scented Bag'
+            proName='Thien Tai Snow Green Tea'
             desc='Shan Tuyet tea is a wild tea variety that grows and develops naturally in the forest. Therefore, this resource is also harvested seasonally, allowing the trees time to recover and continue growing (spring and autumn harvests). Thanks to this balanced approach, there are ancient Shan Tuyet tea trees that are up to 600 years old, 
             yet remain healthy, vigorous, and continue to provide harvests for local people without becoming stunted or depleted.'
             mainPrice='114,000 VND'
