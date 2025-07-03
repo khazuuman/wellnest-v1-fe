@@ -49,12 +49,12 @@ export default function Home() {
     '/images/product_demo_img/winterbox4.jpg',
   ]
 
-  const fallbox = [
-    '/images/product_demo_img/fallbox1.jpg',
-    '/images/product_demo_img/fallbox2.jpg',
-    '/images/product_demo_img/fallbox3.png',
-    '/images/product_demo_img/fallbox4.png',
-  ]
+  // const fallbox = [
+  //   '/images/product_demo_img/fallbox1.jpg',
+  //   '/images/product_demo_img/fallbox2.jpg',
+  //   '/images/product_demo_img/fallbox3.png',
+  //   '/images/product_demo_img/fallbox4.png',
+  // ]
 
   const rechargeSet = [
     '/images/product_demo_img/recharge.jpg',
