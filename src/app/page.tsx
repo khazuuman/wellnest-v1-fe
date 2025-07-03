@@ -267,14 +267,14 @@ export default function Home() {
             isSale={false}
             isSoldOut={false}
             isNew={true} />
-          <ProductCard slides={fallbox}
+          {/* <ProductCard slides={fallbox}
             proName='FALL BOX'
             desc='The autumn wellness gift box, wrapped in gentle golden hues, sends wishes of peace and care during the cool season.'
             mainPrice='Cozy autumn, healthy gifts inside'
             addPrice={null}
             isSale={false}
             isSoldOut={false}
-            isNew={true} />
+            isNew={true} /> */}
         </div>
         <div className="h-fit mt-15">
           <h2 className="font-heebo [@media(min-width:1300px)]:text-[40px]/10 text-[30px]/8 mt-[10px] mb-[50px] text-black w-screen flex justify-center">New Gift Set Collection</h2>
